@@ -1,4 +1,4 @@
-package Problem1.address;
+package problemone.address;
 
 public class Address {
 

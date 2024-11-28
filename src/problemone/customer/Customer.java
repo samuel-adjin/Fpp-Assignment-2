@@ -1,6 +1,6 @@
-package Problem1.customer;
+package problemone.customer;
 
-import Problem1.address.Address;
+import problemone.address.Address;
 
 public class Customer {
 
