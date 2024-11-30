@@ -35,7 +35,7 @@ public class HeartRates {
         double lowerBoundaryTargetHeartRate = (averageHeartRate * LOWER_BOUNDARY) + RESTING_HEART_RATE;
         //Upper Boundary Target Heart Rate (UBTHR)
         double upperBoundaryTargetHeartRate = (averageHeartRate * UPPER_BOUNDARY) + RESTING_HEART_RATE;
-        System.out.printf("The Target Heart Rate Range is between %.2f and %f%n",lowerBoundaryTargetHeartRate,upperBoundaryTargetHeartRate );
+        System.out.println("The Target Heart Rate Range is between " + lowerBoundaryTargetHeartRate + " and " + upperBoundaryTargetHeartRate);
     }
 
     public String getLastName() {
