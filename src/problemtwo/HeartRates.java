@@ -11,15 +11,14 @@ public class HeartRates {
     private static final int RESTING_HEART_RATE = 70;
     private static final double LOWER_BOUNDARY = 0.5;
     private static final double UPPER_BOUNDARY = 0.85;
-    private final int maximumHeartRate;
-    private final int age;
+    private  int maximumHeartRate;
 
     public HeartRates(String firstName, String lastName, LocalDate dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
-        this.age = calculateAge(dateOfBirth);
-        this.maximumHeartRate = calculateMaxHeartRate(this.age);
+        int age = calculateAge(dateOfBirth);
+        this.maximumHeartRate = calculateMaxHeartRate(age);
     }
 
     public int calculateAge(LocalDate dateOfBirth) {
@@ -67,7 +66,7 @@ public class HeartRates {
     public String toString() {
         return "First Name : " + this.getFirstName() + '\n' +
                 "Last Name : " + this.getLastName() + '\n' +
-                "Age : " + age + '\n' +
+                "Age : " + calculateAge(this.dateOfBirth) + '\n' +
                 "Date of Birth : " + this.getDateOfBirth() + '\n' +
                 "Maximum Heart Rate : " + maximumHeartRate;
     }
