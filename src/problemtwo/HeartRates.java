@@ -64,10 +64,10 @@ public class HeartRates {
 
     @Override
     public String toString() {
-        return "First Name : " + this.getFirstName() + '\n' +
-                "Last Name : " + this.getLastName() + '\n' +
+        return "First Name : " + firstName + '\n' +
+                "Last Name : " + lastName + '\n' +
                 "Age : " + calculateAge(this.dateOfBirth) + '\n' +
-                "Date of Birth : " + this.getDateOfBirth() + '\n' +
+                "Date of Birth : " + dateOfBirth + '\n' +
                 "Maximum Heart Rate : " + maximumHeartRate;
     }
 }
